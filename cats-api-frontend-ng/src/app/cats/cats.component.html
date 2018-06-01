@@ -1,0 +1,10 @@
+<div class='grid-list'>
+  <mat-grid-list cols="2" rowHeight="200">
+    <mat-grid-tile *ngFor="let image of images">
+      <a href={{image.sourceUrl}} target='_blank'>
+        <img src={{image.url}} alt={{image.id}} />
+      </a>
+      <mat-grid-tile-footer>{{image.id}}</mat-grid-tile-footer>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

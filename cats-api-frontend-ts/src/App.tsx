@@ -1,13 +1,13 @@
-import React from 'react';
+import * as React from 'react';
+
+import { MenuItem, SelectField } from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
 
 import CatList from './components/CatList';
 
-export default class App extends React.Component {
+export default class App extends React.Component<any, any> {
 
-  constructor(props) {
+  public constructor(props: any) {
     super(props);
 
     this.state = {
@@ -15,9 +15,9 @@ export default class App extends React.Component {
     };
   }
 
-  handleChange = (event, index, category) => this.setState({category})
+  public handleChange = (event: any, index: number, category: string) => this.setState({category})
 
-  render() {
+  public render() {
     return (
       <div className="root-div">
         <MuiThemeProvider>
@@ -31,5 +31,4 @@ export default class App extends React.Component {
       </div>
     );
   }
-
 }

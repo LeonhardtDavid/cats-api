@@ -1,0 +1,19 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.root-div {
+  display: 'flex';
+  flexWrap: 'wrap';
+  justifyContent: 'space-around';
+}
+
+.grid-list {
+  /* width: 50%; */
+  /* height: 450; */
+  /* overflowY: 'auto'; */
+}

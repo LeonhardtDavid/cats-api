@@ -1,0 +1,10 @@
+<div className="root-div">
+  <mat-form-field>
+    <mat-select placeholder="Category" [(value)]="selected">
+      <mat-option></mat-option>
+      <mat-option value="hats">Hats</mat-option>
+      <mat-option value="space">Space</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <cats [category]="selected"></cats>
+</div>
